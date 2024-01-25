@@ -1,0 +1,152 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  8. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+/* After CSS Reset */
+
+header {
+  display: flex;
+  align-items: center; /* This vertically centers the text */
+  justify-content: center;
+  background-image: url('https://img.mlbstatic.com/mlb-images/image/upload/t_2x1/t_w1536/mlb/wvenwha2odnuw6rkzvqc.jpg'); /* Replace with your image path */
+  background-size: contain;
+  background-position: center;
+  color: white; /* Change as needed for visibility */
+  height: 250px; /* Adjust as needed */
+  text-align: center;
+  padding: 20px;
+  font-family: 'Arial', sans-serif; /* Change to your desired font */
+}
+
+body {
+  background-color: #a0a0a0;
+}
+
+h1 {
+  color: white; /* Text color */
+  text-shadow:
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+      -1px  1px 0 #000,
+       1px  1px 0 #000; /* Outline color */
+}
+
+.league-container {
+  display: flex;
+  justify-content: center; /* Horizontally center the children */
+  align-items: flex-start; /* Align items to the start if they have different heights */
+  max-width: 1000px; /* Maximum width of the container */
+  margin: 0 auto; /* Center the container in the page */
+  gap: 20px; /* Space between the league sections */
+  font-family: 'Arial', sans-serif;
+}
+
+.league {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically if needed */
+}
+
+.division {
+  width: 100%; /* Adjust as needed */
+  text-align: center;
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+.team {
+  display: block; /* Make the button a block-level element */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  text-transform: uppercase; /* Uppercase text */
+  font-weight: bold; /* Bold text */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin: 5px 0; /* Margin for spacing */
+  transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+button:hover {
+  opacity: 0.8; /* Slight fade effect on hover */
+}
+
+.ATL { background-color: #13274F; }
+.PHI { background-color: #E81828; }
+.NYM { background-color: #FF5910; }
+.WAS { background-color: #AB0003; }
+.MIA { background-color: #00A3E0; }
+.CHI { background-color: #0E3386; }
+.MIL { background-color: #FFC52F; }
+.STL { background-color: #C41E3A; }
+.CIN { background-color: #C6011F; }
+.PIT { background-color: #FDB827; }
+.SF { background-color: #FD5A1E; }
+.LAD { background-color: #005A9C; }
+.SD { background-color: #2F241D; }
+.COL { background-color: #333366; }
+.AZ { background-color: #A71930; }
+.NYY { background-color: #0C2340; }
+.TB { background-color: #092C5C; }
+.BOS { background-color: #BD3039; }
+.TOR { background-color: #134A8E; }
+.BAL { background-color: #DF4601; }
+.CLE { background-color: #0C2340; }
+.CWS { background-color: #27251F; }
+.MIN { background-color: #002B5C; }
+.KC { background-color: #004687; }
+.DET { background-color: #0C2340; }
+.HOU { background-color: #EB6E1F; }
+.OAK { background-color: #003831; }
+.LAA { background-color: #BA0021; }
+.TEX { background-color: #C0111F; }
+.SEA { background-color: #0C2C56; }

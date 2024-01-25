@@ -1,24 +1,70 @@
-<!-- https://www.joshwcomeau.com/snippets/html/html-skeleton/ -->
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Splash</title>
-    <!-- linking our CSS to our HTML -->
-    <link href="style.css" rel="stylesheet" />
-    <link href="my_theme.css" rel="stylesheet" />
-  </head>
-  <body>
-    <header  >
-      <img class="logo" />
+<html>
+<head>
+    <title>Baseball Browser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Baseball Browser</h1>
     </header>
-    <main>
-      <section class="content">
-        <h1 class="title">Some text that is really inspiring</h1>
-        <p class="blurb">The best business in the world! Or art store. Or coffee shop.</p>
-        <div class="spacer"></div>
-        <a href="#" class="btn">Do Something</a>
-      </section>
-      <img class="illustration" />
-    </main>
-  </body>
+    <section class="league-container">
+          <section class="league" id="national-league">
+            <h2>National League</h2>
+            <section class="division" id="nl-east">
+                <h3>East</h3>
+                <button class="ATL">Atlanta Braves</button>
+                <button class="PHI">Philadelphia Phillies</button>
+                <button class="NYM">New York Mets</button>
+                <button class="WAS">Washington Nationals</button>
+                <button class="MIA">Miami Marlins</button>
+            </section>
+            <section class="division" id="nl-central">
+                <h3>Central</h3>
+                <button class="CHI">Chicago Cubs</button>
+                <button class="STL">St. Louis Cardinals</button>
+                <button class="MIL">Milwaukee Brewers</button>
+                <button class="CIN">Cincinnati Reds</button>
+                <button class="PIT">Pittsburgh Pirates</button>
+            </section>
+            <section class="division" id="nl-west">
+                <h3>West</h3>
+                <button class="LAD">Los Angeles Dodgers</button>
+                <button class="SD">San Diego Padres</button>
+                <button class="SF">San Francisco Giants</button>
+                <button class="COL">Colorado Rockies</button>
+                <button class="AZ">Arizona Diamondbacks</button>
+            </section>
+          </section>
+          <section class="league" id="american-league">
+            <h2>American League</h2>
+            <!-- Divisions and teams structured similarly to National League -->
+            <section class="division" id="al-east">
+                <h3>East</h3>
+                <button class="NYY">New York Yankees</button>
+                <button class="BOS">Boston Red Sox</button>
+                <button class="TB">Tampa Bay Rays</button>
+                <button class="TOR">Toronto Blue Jays</button>
+                <button class="BAL">Baltimore Orioles</button>
+            </section>
+            <section class="division" id="al-central">
+                <h3>Central</h3>
+                <button class="MIN">Minnesota Twins</button>
+                <button class="CLE">Cleveland Guardians</button>
+                <button class="CWS">Chicago White Sox</button>
+                <button class="KC">Kansas City Royals</button>
+                <button class="DET">Detroit Tigers</button>
+            </section>
+            <section class="division" id="al-west">
+                <h3>West</h3>
+                <button class="HOU">Houston Astros</button>
+                <button class="OAK">Oakland Athletics</button>
+                <button class="LAA">Los Angeles Angels</button>
+                <button class="TEX">Texas Rangers</button>
+                <button class="SEA">Seattle Mariners</button>
+            </section>
+          </section>
+    </section>
+    <script src="script.js"></script>
+</body>
 </html>
